@@ -4,7 +4,10 @@
   "description": "A simple service to send appointment confirmations via WhatsApp for dentalink dental software",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.config.dev.js",
+    "serve": "webpack serve --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/johannpereze/whatsAppForDentalink/issues"
   },
-  "homepage": "https://github.com/johannpereze/whatsAppForDentalink#readme"
+  "homepage": "https://github.com/johannpereze/whatsAppForDentalink#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
