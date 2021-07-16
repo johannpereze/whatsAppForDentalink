@@ -1,11 +1,24 @@
-import header from "../templates/header";
-import passwords from "../pages/passwords";
+import headerTemplate from "../templates/header"
+import home from "../pages/home";
+import apiKeys from "../pages/apiKeys";
+import line from "../pages/line";
+import templateSelector from "../pages/templateSelector";
+import templateOptions from "../pages/templateOptions";
+import resume from "../pages/resume";
+import sending from "../pages/sending";
+import error404 from "../pages/error404";
 import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 
 const routes = {
-  "/": Home,
-  "/:id": PokeInfo,
+  "/": home,
+  "/apikeys": apiKeys,
+  "/line": line,
+  "/error404": error404,
+  "/templateselector": templateSelector,
+  "/templateoptions": templateOptions,
+  "/resume": resume,
+  "/sending": sending,
 };
 
 const router = async () => {
@@ -14,10 +27,11 @@ const router = async () => {
 
   
   let hash = getHash();
+  console.log(await hash);
   let route = await resolveRoutes(hash);
-  let render = routes[route] ? routes[route] : Error404;
+  let render = routes[route] ? routes[route] : error404;
   content.innerHTML = await render();
-  header.innerHTML = await Header();
+  header.innerHTML = await headerTemplate();
 };
 
 export default router;

@@ -1,6 +1,6 @@
 const header = ()=>{
     const view = `
-    <h1>View</h1>
+    <a href="/" class="logo">Logo</a>
     ` 
     return view
 }
