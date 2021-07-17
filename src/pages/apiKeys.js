@@ -7,15 +7,15 @@ const passwords = ()=>{
     <form action="">
         <label for="dentalink-apikey">
             <span>Ingresa la clave de dentalink:</span>
-            <input type="text" name="" id="dentalink-apikey">
+            <input type="password" id="dentalink-apikey">
         </label>
         <label for="B2Chat-apikey">
             <span>Ingresa el usuario de B2Chat:</span>
-            <input type="text" name="" id="B2Chat-apikey">
+            <input type="password" id="B2Chat-apikey">
         </label>
         <label for="B2Chat-apipass">
             <span>Ingresa la clave de B2Chat:</span>
-            <input type="text" name="" id="B2Chat-apipass">
+            <input type="password" id="B2Chat-apipass">
         </label>
         
     </form>
