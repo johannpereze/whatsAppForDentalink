@@ -1,9 +1,11 @@
-const apiKeys = () =>{
-    // conts keys = document.getElementById("dentalink-apikey").in
-    // return keys
-}
+const getKeys = () => {
+  const keys = {
+    dentalinkApikey: document.getElementById("dentalink-apikey").value,
+    B2ChatApikey: document.getElementById("B2Chat-apikey").value,
+    B2ChatApipass: document.getElementById("B2Chat-apipass").value,
+  };
+  console.log(keys);
+  return keys;
+};
 
-
-// "dentalink-apikey"
-// "B2Chat-apikey"
-// "B2Chat-apipass"
+export default getKeys;
