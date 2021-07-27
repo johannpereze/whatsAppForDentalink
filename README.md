@@ -11,3 +11,9 @@ Wireframe in [Figma.](https://www.figma.com/file/a4yaXq5cNPnrc2RmFtfJ7r/Wirefram
 Known Issues:
 
 Tengo problemas con la función ketKeys que la tuve que meter dentro del router. No se como sacarla y que funcione. Y en todas las páginas que no son apikeys me sale el error que hay un addeventlistener de null
+
+Cómo manejo variables globales en mi app
+
+Las funciones post de whatsapp no me funcionan por la política CORS
+
+
