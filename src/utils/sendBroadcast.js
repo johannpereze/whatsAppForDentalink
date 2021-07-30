@@ -2,7 +2,7 @@ var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 myHeaders.append(
   "Authorization",
-  "Bearer 368789f7-7817-4bf6-bcb0-49483b6a66b9"
+  "Bearer bd8b005e-10f3-45a1-b96f-2ba48a6cd2b1"
 );
 
 var raw = JSON.stringify({
@@ -10,7 +10,7 @@ var raw = JSON.stringify({
   to: "+573192161411",
   contact_name: "",
   template_name: "recordatorio_cita_vigente_3",
-  campaign_name: "ensayo 838",
+  campaign_name: "ensayo",
   values: [
     "Johann Sebastian",
     "Prevenga Caldas",
