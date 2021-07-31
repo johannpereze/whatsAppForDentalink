@@ -5,6 +5,8 @@ const getKeys = () => {
     B2ChatApipass: document.getElementById("B2Chat-apipass").value,
   };
   console.log(keys);
+  var globalKeys = keys
+  //guardar keys en el window.localstorage
   return keys;
 };
 

@@ -22,6 +22,8 @@ const routes = {
   "/sending": sending,
 };
 
+var globalKeys = undefined
+
 const router = async () => {
   const header = null || document.getElementById("header");
   const content = null || document.getElementById("content");
@@ -33,7 +35,9 @@ const router = async () => {
   let render = routes[route] ? routes[route] : error404;
   content.innerHTML = await render();
   header.innerHTML = await headerTemplate();
-  document.getElementById("send-keys").addEventListener("click", getKeys); //No quiero este aquí pero no se como sacarlo
+  document.getElementById("send-keys").addEventListener("click", () => globalKeys = getKeys()); //No quiero este aquí pero no se como sacarlo
 };
 
 export default router;
+
+//Puedo guardar datos en el window.localStorage
