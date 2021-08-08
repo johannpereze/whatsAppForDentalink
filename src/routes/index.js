@@ -11,6 +11,8 @@ import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 import getKeys from "../utils/getKeys";                   //No quiero este aquí pero no se como sacarlo
 
+
+
 const routes = {
   "/": home,
   "/apikeys": apiKeys,
